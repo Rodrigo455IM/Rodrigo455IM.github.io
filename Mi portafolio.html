@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+
+            <h1>Rodrigo Ibarra Mayoral</h1>
+
+            <p>
+                Estudiante de Ingeniería en Sistemas Electrónicos
+            </p>
+
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+        <nav id="menu-nav">
+
+            <ul>
+
+                <li><a href="#perfil">Sobre mí</a></li>
+
+                <li><a href="#estudios">Educación</a></li>
+
+                <li><a href="#habilidades">Habilidades</a></li>
+
+                <li><a href="#proyectos">Proyectos</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- BOTÓN MODO -->
+        <button id="modo-btn" class="modo-btn">
+            🌙
+        </button>
+
+    </header>
+
+    <main>
+        <section id="perfil">
+            <article>
+                <img src="Perfil.jpg" alt="Foto de Rodrigo" width="250">
+
+                <h2>Rodrigo Ibarra Mayoral</h2>
+                <p class="ocupacion">Estudiante de Ingeniería en Sistemas Electrónicos Inteligentes</p>
+
+                <div class="redes-sociales">
+                    <a href="https://www.linkedin.com/in/rodrigo-ibarra-mayoral-26773b409/" target="_blank"
+                        class="icono-red">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Rodrigo455IM" target="_blank" class="icono-red">
+                        GitHub
+                    </a>
+                    <a href="https://www.facebook.com/rodrigo.ibarra.5680/" target="_blank" class="icono-red">
+                        Facebook
+                    </a>
+                </div>
+
+                <div class="contenedor-descripcion">
+                    <h3 class="titulo-sobre-mi">Sobre mí</h3>
+                    <p class="descripcion-texto">
+                        Estudiante cursando mi octavo semestre de la carrera de ingeniería en sistemas electrónicos
+                        inteligentes en la universidad autónoma de ciudad juárez.
+                        25 años de edad, vivo en ciudad Juárez chihuahua, me encanta la tecnología, el saber como
+                        funcionan las cosas, en especial los sistemas electrónicos y la programación.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section id="estudios">
+            <h2>Historial <span>Educativo</span></h2>
+
+            <div class="contenedor-estudios">
+                <article class="tarjeta-estudio">
+                    <h3>Bachillerato</h3>
+                    <h4>Politécnico de la Frontera</h4>
+                    <p class="fecha">2016 - 2019</p>
+                    <p>
+                        Bachillerato técnico enfocado en formación académica y preparación
+                        para el área Electrómecanica.
+                    </p>
+                </article>
+
+                <article class="tarjeta-estudio">
+                    <h3>Universidad</h3>
+                    <h4>Universidad Autónoma de Ciudad Juárez</h4>
+                    <p class="fecha">2022 - Actualidad</p>
+                    <p>
+                        Estudiante de Ingeniería en Sistemas Electrónicos Inteligentes,
+                        cursando materias relacionadas con electrónica, programación,
+                        sistemas embebidos e inteligencia artificial.
+                    </p>
+                </article>
+            </div>
+
+            <ol class="lista-oculta">
+                <li>Bachillerato - Politécnico de la Frontera</li>
+                <li>Universidad - Universidad Autónoma de Ciudad Juárez</li>
+            </ol>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <div class="carrusel-habilidades">
+
+                <button class="btn-carrusel" id="btn-izquierda">
+                    &#10094;<!-- Muestra el símbolo menor que para desplazamiento a la izquierda -->
+                </button>
+
+                <div class="ventana-habilidades">
+
+                    <div class="contenedor-habilidades" id="contenedor-habilidades">
+
+                    </div>
+
+                </div>
+
+                <button class="btn-carrusel" id="btn-derecha">
+                    &#10095; <!-- Muestra el símbolo mayor que para desplazamiento a la derecha -->
+                </button>
+
+            </div>
+
+            <dl class="lista-definicion-habilidades">
+
+                <dt>Programación y Desarrollo</dt>
+                <dd>C, C++, HTML, CSS, JavaScript y Python.</dd>
+
+                <dt>Sistemas Embebidos</dt>
+                <dd>Arduino, ESP32, VHDL, Ensamblador x86 y microcontroladores.</dd>
+
+                <dt>Electrónica y Simulación</dt>
+                <dd>Multisim, LabVIEW, MATLAB e instrumentación virtual.</dd>
+
+                <dt>Diseño Digital</dt>
+                <dd>Photoshop, After Effects y Blender.</dd>
+
+                <dt>Machine Learning</dt>
+                <dd>
+                    Regresión lineal, regresión logística, clasificación multiclase,
+                    redes neuronales, K-Means y SVM.
+                </dd>
+
+            </dl>
+
+        </section>
+
+        <section id="proyectos">
+
+            <h2>Proyectos</h2>
+
+            <p class="intro-proyectos">
+                Una muestra de proyectos donde he aplicado conocimientos en electrónica,
+                programación y sistemas inteligentes.
+            </p>
+
+            <div class="contenedor-proyectos">
+
+                <!-- PROYECTO 1 -->
+                <article class="tarjeta-proyecto">
+
+                    <img src="img/shazam.jpg" alt="Shazam en MATLAB">
+
+                    <h3>Shazam en MATLAB</h3>
+
+                    <p class="tipo-proyecto">
+                        Procesamiento Digital de Señales
+                    </p>
+
+                    <p class="descripcion-proyecto">
+                        Sistema de reconocimiento de canciones utilizando análisis
+                        espectral y procesamiento digital de señales en MATLAB.
+                    </p>
+
+                    <div class="herramientas-proyecto">
+                        <span>MATLAB</span>
+                        <span>FFT</span>
+                        <span>Procesamiento de audio</span>
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 2 -->
+                <article class="tarjeta-proyecto">
+
+                    <img src="img/Ecualizador.jpg" alt="Ecualizador Digital">
+
+                    <h3>Ecualizador Digital</h3>
+
+                    <p class="tipo-proyecto">
+                        Procesamiento Digital de Señales
+                    </p>
+
+                    <p class="descripcion-proyecto">
+                        Desarrollo de un ecualizador digital en MATLAB utilizando
+                        procesamiento digital de señales y una interfaz gráfica
+                        para el diseño y manipulación del sistema de audio.
+                    </p>
+
+                    <div class="herramientas-proyecto">
+                        <span>MATLAB</span>
+                        <span>Procesamiento de señales</span>
+                        <span>Procesamiento de audio</span>
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 3 -->
+                <article class="tarjeta-proyecto">
+
+                    <img src="img/nomina.jpg" alt="Calculadora de Nómina">
+
+                    <h3>Calculadora de Nómina</h3>
+
+                    <p class="tipo-proyecto">
+                        Lenguaje Ensamblador x86
+                    </p>
+
+                    <p class="descripcion-proyecto">
+                        Sistema de cálculo de nómina empresarial desarrollado en
+                        ensamblador, incluyendo manejo de horas normales,
+                        dobles y triples.
+                    </p>
+
+                    <div class="herramientas-proyecto">
+                        <span>Assembly x86</span>
+                        <span>EMU8086</span>
+                        <span>Manejo de datos</span>
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 4 -->
+                <article class="tarjeta-proyecto">
+
+                    <img src="img/alu.jpg" alt="Procesador con ALU">
+
+                    <h3>Procesador Básico con ALU</h3>
+
+                    <p class="tipo-proyecto">
+                        Sistemas Digitales
+                    </p>
+
+                    <p class="descripcion-proyecto">
+                        Diseño de un procesador simple con unidad lógica aritmética,
+                        registros y operaciones básicas utilizando lógica digital.
+                    </p>
+
+                    <div class="herramientas-proyecto">
+                        <span>VHDL</span>
+                        <span>ALU</span>
+                        <span>Sistemas digitales</span>
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 5 -->
+                <article class="tarjeta-proyecto">
+
+                    <img src="img/diabetes.jpg" alt="Predicción de Diabetes">
+
+                    <h3>Predicción de Diabetes</h3>
+
+                    <p class="tipo-proyecto">
+                        Machine Learning
+                    </p>
+
+                    <p class="descripcion-proyecto">
+                        Entrenamiento de redes neuronales y modelos de clasificación
+                        para analizar datos médicos y realizar predicciones
+                        relacionadas con diabetes.
+                    </p>
+
+                    <div class="herramientas-proyecto">
+                        <span>Python</span>
+                        <span>Numpy</span>
+                        <span>Redes neuronales</span>
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 6 -->
+                <article class="tarjeta-proyecto">
+
+                    <img src="img/portafolio.jpg" alt="Portafolio Web">
+
+                    <h3>Portafolio Profesional</h3>
+
+                    <p class="tipo-proyecto">
+                        Programación Web Full Stack
+                    </p>
+
+                    <p class="descripcion-proyecto">
+                        Desarrollo de un portafolio web interactivo utilizando
+                        HTML, CSS y JavaScript con diseño responsivo y animaciones.
+                    </p>
+
+                    <div class="herramientas-proyecto">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="contacto">
+
+            <h2>Contacto</h2>
+
+            <div class="contenedor-contacto">
+
+                <!-- INFORMACIÓN -->
+                <article class="info-contacto">
+
+                    <h3>Información de Contacto</h3>
+
+                    <!-- UBICACIÓN -->
+                    <div class="dato-contacto">
+
+                        <div class="icono-contacto">
+                            <img src="img/ubicacion.png" alt="Ubicación">
+                        </div>
+
+                        <div>
+                            <span class="titulo-contacto">Ubicación</span>
+                            <p>Ciudad Juárez, Chihuahua, México</p>
+                        </div>
+
+                    </div>
+
+                    <!-- UNIVERSIDAD -->
+                    <div class="dato-contacto">
+
+                        <div class="icono-contacto">
+                            <img src="img/universidad.png" alt="Universidad">
+                        </div>
+
+                        <div>
+                            <span class="titulo-contacto">Universidad</span>
+                            <p>Universidad Autónoma de Ciudad Juárez</p>
+                        </div>
+
+                    </div>
+
+                    <!-- CORREO -->
+                    <div class="dato-contacto">
+
+                        <div class="icono-contacto">
+                            <img src="img/correo.png" alt="Correo">
+                        </div>
+
+                        <div>
+                            <span class="titulo-contacto">Correo Electrónico</span>
+                            <p>rodrigoibarra455@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                    <!-- CORREO UNIVERSITARIO -->
+                    <div class="dato-contacto">
+
+                        <div class="icono-contacto">
+                            <img src="img/escolar.png" alt="Correo Universitario">
+                        </div>
+
+                        <div>
+                            <span class="titulo-contacto">Correo Universitario</span>
+                            <p>al225729@alumnos.uacj.mx</p>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- FORMULARIO -->
+                <article class="formulario-contacto">
+
+                    <h3>Envíame un Mensaje</h3>
+
+                    <form id="formulario-contacto">
+                        <!-- NOMBRE -->
+                        <div class="grupo-input">
+
+                            <label for="nombre">Nombre</label>
+
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required
+                                oninvalid="this.setCustomValidity('Por favor ingresa tu nombre')"
+                                oninput="this.setCustomValidity('')">
+
+                        </div>
+
+                        <!-- CORREO -->
+                        <div class="grupo-input">
+
+                            <label for="email">Correo</label>
+
+                            <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required
+                                oninvalid="this.setCustomValidity('Ingresa un correo válido')"
+                                oninput="this.setCustomValidity('')">
+
+                        </div>
+
+                        <!-- ASUNTO -->
+                        <div class="grupo-input">
+
+                            <label for="asunto">Asunto</label>
+
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required
+                                oninvalid="this.setCustomValidity('Por favor escribe un asunto')"
+                                oninput="this.setCustomValidity('')">
+
+                        </div>
+
+                        <!-- MENSAJE -->
+                        <div class="grupo-input">
+
+                            <label for="mensaje">Mensaje</label>
+
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí"
+                                required oninvalid="this.setCustomValidity('Por favor escribe un mensaje')"
+                                oninput="this.setCustomValidity('')"></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn-enviar">
+                            Enviar Mensaje
+                        </button>
+
+                    </form>
+
+                </article>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="pie-portafolio">
+
+        <p class="pie-texto">
+            &copy; 2026 - Portafolio Profesional. Programación Web Full Stack.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
