@@ -157,3 +157,24 @@ botonMenu.addEventListener("click", () => {
     }
 
 });
+
+/* =========================
+   EFECTO ESTELA DEL MOUSE
+========================= */
+
+document.addEventListener("mousemove", (e) => {
+
+    const particula = document.createElement("div");
+
+    particula.classList.add("estela");
+
+    particula.style.left = e.pageX + "px";
+    particula.style.top = e.pageY + "px";
+
+    document.body.appendChild(particula);
+
+    setTimeout(() => {
+        particula.remove();
+    }, 600);
+
+});

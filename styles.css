@@ -1,5 +1,5 @@
 /* =========================
-   VARIABLES GENERALES
+   Variantes para los colores
 ========================= */
 :root {
     /* Fondos */
@@ -54,7 +54,7 @@ body.modo-claro {
 }
 
 /* =========================
-   RESET
+   RESET Para que no se vean marcos al rededor de la pagina
 ========================= */
 * {
     margin: 0;
@@ -74,9 +74,35 @@ section[id] {
 }
 
 body {
-    background-color: var(--fondo-principal);
+
+    background-image:
+        linear-gradient(rgba(8, 17, 32, 0.82),
+            rgba(8, 17, 32, 0.88)),
+        url("Fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-repeat: no-repeat;
+
     font-family: var(--fuente-principal);
+
     color: var(--texto-blanco);
+}
+
+/* =========================
+   FONDO MODO CLARO
+========================= */
+
+body.modo-claro {
+
+    background-image: none;
+
+    background-color: var(--fondo-principal);
+
 }
 
 /* =========================
@@ -467,11 +493,9 @@ nav ul li a:hover {
 }
 
 .tarjeta-proyecto {
-    background: linear-gradient(
-        180deg,
-        var(--fondo-tarjeta),
-        var(--fondo-tarjeta-secundario)
-    );
+    background: linear-gradient(180deg,
+            var(--fondo-tarjeta),
+            var(--fondo-tarjeta-secundario));
 
     border: 1px solid var(--borde-sutil);
     border-radius: 24px;
@@ -853,6 +877,49 @@ nav ul li a:hover {
         gap: 18px;
         margin-top: 20px;
         padding-bottom: 10px;
+    }
+
+}
+
+/* =========================
+   ESTELA DEL MOUSE
+========================= */
+
+.estela {
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: rgba(6, 182, 212, 0.35);
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    animation: desaparecer 0.5s linear forwards;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 0 6px rgba(6, 182, 212, 0.25);
+
+}
+
+/* Animación */
+@keyframes desaparecer {
+
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.2);
     }
 
 }
